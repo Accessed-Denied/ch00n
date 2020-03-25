@@ -14,6 +14,7 @@
 		22ECB740242A855F003A9317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ECB73F242A855F003A9317 /* Assets.xcassets */; };
 		22ECB743242A855F003A9317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ECB741242A855F003A9317 /* LaunchScreen.storyboard */; };
 		22ECB74E242A8560003A9317 /* ch00nTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB74D242A8560003A9317 /* ch00nTests.swift */; };
+		FA463274242B421C00476141 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA463273242B421C00476141 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		22ECB749242A8560003A9317 /* ch00nTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ch00nTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22ECB74D242A8560003A9317 /* ch00nTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ch00nTests.swift; sourceTree = "<group>"; };
 		22ECB74F242A8560003A9317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA463273242B421C00476141 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA463274242B421C00476141 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 				22ECB735242A855C003A9317 /* ch00n */,
 				22ECB74C242A8560003A9317 /* ch00nTests */,
 				22ECB734242A855C003A9317 /* Products */,
+				FA463272242B421C00476141 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +101,14 @@
 				22ECB74F242A8560003A9317 /* Info.plist */,
 			);
 			path = ch00nTests;
+			sourceTree = "<group>";
+		};
+		FA463272242B421C00476141 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA463273242B421C00476141 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
