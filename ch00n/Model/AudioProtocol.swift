@@ -9,8 +9,12 @@
 import UIKit
 import AVFoundation
 
+enum AudioStatus: String{
+    case play
+    case pause
+    case stop
+}
+
 protocol AudioProtocolDelegate: class {
-    func PlayAudio()
-//    func Pause()
-//    func Stop()
+    func didAudioStatusReceived(status: AudioStatus)
 }

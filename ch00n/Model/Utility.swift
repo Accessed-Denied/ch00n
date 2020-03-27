@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 import AVFoundation
 
 struct AudioURL {
@@ -16,20 +17,14 @@ struct AudioURL {
 
 class AudioDownloader {
     
-    func PlayAudio(url: String) {
-        
-        
-        let player: AVPlayer?
-        let url = URL.init(string: url)
-
-        let playerItem: AVPlayerItem = AVPlayerItem(url: url!)
-        player = AVPlayer(playerItem: playerItem)
-
-        let playerLayer = AVPlayerLayer(player: player!)
-
-        playerLayer.frame = CGRect(x: 0, y: 0, width: 10, height: 50)
-//        self.view.layer.addSublayer(playerLayer)
-        player?.play()
+    func PlayAudio(vc: UIViewController) {
+        let player = AVPlayer(url: URL(string: AudioURL.url)!)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        vc.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
     }
+    
 }
 

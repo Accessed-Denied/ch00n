@@ -11,24 +11,28 @@ import AVFoundation
 
 class HomeVC: UIViewController {
 
-    weak var delegate: AudioProtocolDelegate?
-    var audioDownloader: AudioDownloader?
+    private var homeVM: HomeViewModel = HomeViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        delegate = self
+        homeVM.audioDelegate = self
+
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func playBtnIsPressed(_ sender: UIButton) {
+        homeVM.playSound(vc: self)
     }
     
 }
 
-extension HomeVC: AudioProtocolDelegate {
-    func PlayAudio() {
-        audioDownloader?.PlayAudio(url: AudioURL.url)
+extension HomeVC: AudioProtocolDelegate{
+    func didAudioStatusReceived(status: AudioStatus) {
+        print(status)
     }
+    
+    
 }
+
+
 
