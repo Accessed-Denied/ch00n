@@ -22,16 +22,13 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func playBtnIsPressed(_ sender: UIButton) {
-        PlayAudio()
     }
     
 }
 
 extension HomeVC: AudioProtocolDelegate {
     func PlayAudio() {
-        self.audioDownloader?.PlayAudio(url: AudioURL.url)
+        audioDownloader?.PlayAudio(url: AudioURL.url)
     }
-    
-    
 }
 

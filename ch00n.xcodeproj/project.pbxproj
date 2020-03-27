@@ -14,6 +14,7 @@
 		22ECB740242A855F003A9317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ECB73F242A855F003A9317 /* Assets.xcassets */; };
 		22ECB743242A855F003A9317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ECB741242A855F003A9317 /* LaunchScreen.storyboard */; };
 		22ECB74E242A8560003A9317 /* ch00nTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB74D242A8560003A9317 /* ch00nTests.swift */; };
+		FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420980242E765E00875B83 /* PlayMusicVC.swift */; };
 		FA463274242B421C00476141 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA463273242B421C00476141 /* AVFoundation.framework */; };
 		FA463279242BBDCC00476141 /* AudioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA463278242BBDCC00476141 /* AudioProtocol.swift */; };
 		FA46327B242BC23000476141 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46327A242BC23000476141 /* Utility.swift */; };
@@ -41,6 +42,7 @@
 		22ECB749242A8560003A9317 /* ch00nTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ch00nTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22ECB74D242A8560003A9317 /* ch00nTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ch00nTests.swift; sourceTree = "<group>"; };
 		22ECB74F242A8560003A9317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA420980242E765E00875B83 /* PlayMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicVC.swift; sourceTree = "<group>"; };
 		FA463273242B421C00476141 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FA463278242BBDCC00476141 /* AudioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProtocol.swift; sourceTree = "<group>"; };
 		FA46327A242BC23000476141 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				22ECB73A242A855C003A9317 /* HomeVC.swift */,
+				FA420980242E765E00875B83 /* PlayMusicVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				FA46327B242BC23000476141 /* Utility.swift in Sources */,
 				22ECB73B242A855C003A9317 /* HomeVC.swift in Sources */,
+				FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */,
 				22ECB737242A855C003A9317 /* AppDelegate.swift in Sources */,
 				FA463279242BBDCC00476141 /* AudioProtocol.swift in Sources */,
 				22ECB739242A855C003A9317 /* SceneDelegate.swift in Sources */,
@@ -409,6 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = ch00n/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = ch00n/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
