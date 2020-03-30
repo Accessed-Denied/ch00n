@@ -30,8 +30,6 @@ extension HomeVC: AudioProtocolDelegate{
     func didAudioStatusReceived(status: AudioStatus) {
         print(status)
     }
-    
-    
 }
 
 
