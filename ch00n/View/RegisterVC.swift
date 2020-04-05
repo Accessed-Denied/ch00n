@@ -9,22 +9,45 @@
 import UIKit
 
 class RegisterVC: UIViewController {
+    
+    var position = ["latitude": 30,"longitude":70]
 
+    @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var mobileNumberTextfield: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var nameTextfield: UITextField!
+    @IBOutlet weak var profileImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ConfigUI()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - ConfigUI
+    private func ConfigUI() {
+        registerBtn.layer.cornerRadius = registerBtn.frame.height / 2
     }
-    */
+    
+    //MARK: - registerBtnIsPressed
+    @IBAction func registerBtnIsPressed(_ sender: UIButton) {
+        User.registerUser(withName: nameTextfield.text!, email: emailTextfield.text!, password: passwordTextfield.text!, phoneNumber: mobileNumberTextfield.text!, profilePic: profileImage.image!, location: position) { (Loginhandler) in
+            if Loginhandler == nil{
+                let Login = STORYBOARD.MAIN.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+                let alert = UIAlertController(title: "Verification", message: "A verification mail has been sent to your registered mail id please verify the email.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (result) in
+                    self.navigationController?.pushViewController(Login, animated: true)
+
+                }))
+
+                self.present(alert, animated: true, completion: nil)
+
+            }else{
+                showAlertwithTitle(title: "Error", desc: Loginhandler!, vc: self)
+            }
+        }
+    }
+    
 
 }

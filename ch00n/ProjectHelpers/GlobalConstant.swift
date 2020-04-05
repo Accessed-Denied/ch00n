@@ -6,4 +6,8 @@
 //  Copyright © 2020 Accessed Denied. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct STORYBOARD {
+    static var MAIN = UIStoryboard(name: "Main", bundle: nil)
+}
