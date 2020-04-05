@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		22ECB74E242A8560003A9317 /* ch00nTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB74D242A8560003A9317 /* ch00nTests.swift */; };
 		4B0970D4DEE69861E4AE6FAA /* Pods_ch00nTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977351524BF2322665C27DCD /* Pods_ch00nTests.framework */; };
 		509F520B45961DDE35B6AC7F /* Pods_ch00n.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E85D6D155A0B0E9E81B68C /* Pods_ch00n.framework */; };
+		FA40613D2436538400F8A1FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40613C2436538400F8A1FE /* UserModel.swift */; };
 		FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420980242E765E00875B83 /* PlayMusicVC.swift */; };
 		FA463274242B421C00476141 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA463273242B421C00476141 /* AVFoundation.framework */; };
 		FA463279242BBDCC00476141 /* AudioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA463278242BBDCC00476141 /* AudioProtocol.swift */; };
@@ -54,6 +55,7 @@
 		977351524BF2322665C27DCD /* Pods_ch00nTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ch00nTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1416F9C0DC526E3C86EE81C /* Pods-ch00nTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ch00nTests.debug.xcconfig"; path = "Target Support Files/Pods-ch00nTests/Pods-ch00nTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3FB7F5CC569F2C726D34514 /* Pods-ch00n.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ch00n.debug.xcconfig"; path = "Target Support Files/Pods-ch00n/Pods-ch00n.debug.xcconfig"; sourceTree = "<group>"; };
+		FA40613C2436538400F8A1FE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FA420980242E765E00875B83 /* PlayMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicVC.swift; sourceTree = "<group>"; };
 		FA463273242B421C00476141 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FA463278242BBDCC00476141 /* AudioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProtocol.swift; sourceTree = "<group>"; };
@@ -144,7 +146,6 @@
 				B1416F9C0DC526E3C86EE81C /* Pods-ch00nTests.debug.xcconfig */,
 				FE62E77AA227BF902F741B95 /* Pods-ch00nTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -163,6 +164,7 @@
 			children = (
 				FA463278242BBDCC00476141 /* AudioProtocol.swift */,
 				FA46327A242BC23000476141 /* Utility.swift */,
+				FA40613C2436538400F8A1FE /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -355,6 +357,7 @@
 			files = (
 				FA46327B242BC23000476141 /* Utility.swift in Sources */,
 				22ECB73B242A855C003A9317 /* HomeVC.swift in Sources */,
+				FA40613D2436538400F8A1FE /* UserModel.swift in Sources */,
 				2223D5B0242E7D8200158FEB /* HomeViewModel.swift in Sources */,
 				FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */,
 				22ECB737242A855C003A9317 /* AppDelegate.swift in Sources */,
