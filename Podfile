@@ -12,6 +12,8 @@ target 'ch00n' do
   pod 'Firebase/Storage'
   pod 'Firebase/Messaging'
   pod 'Firebase/Firestore'
+  pod 'NVActivityIndicatorView'
+  pod 'IQKeyboardManagerSwift'
 
   target 'ch00nTests' do
     inherit! :search_paths
