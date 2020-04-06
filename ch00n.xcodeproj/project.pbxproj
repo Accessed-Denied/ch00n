@@ -25,6 +25,8 @@
 		FA3F6A7B243A6F12005C3C6B /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F6A7A243A6F12005C3C6B /* GlobalConstant.swift */; };
 		FA40613D2436538400F8A1FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40613C2436538400F8A1FE /* UserModel.swift */; };
 		FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420980242E765E00875B83 /* PlayMusicVC.swift */; };
+		FA43B522243BAF30007F8732 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43B521243BAF30007F8732 /* LoginVM.swift */; };
+		FA43B526243BB939007F8732 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43B525243BB939007F8732 /* AppModel.swift */; };
 		FA463274242B421C00476141 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA463273242B421C00476141 /* AVFoundation.framework */; };
 		FA463279242BBDCC00476141 /* AudioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA463278242BBDCC00476141 /* AudioProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,8 @@
 		FA3F6A7A243A6F12005C3C6B /* GlobalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
 		FA40613C2436538400F8A1FE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FA420980242E765E00875B83 /* PlayMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicVC.swift; sourceTree = "<group>"; };
+		FA43B521243BAF30007F8732 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		FA43B525243BB939007F8732 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		FA463273242B421C00476141 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FA463278242BBDCC00476141 /* AudioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProtocol.swift; sourceTree = "<group>"; };
 		FE62E77AA227BF902F741B95 /* Pods-ch00nTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ch00nTests.release.xcconfig"; path = "Target Support Files/Pods-ch00nTests/Pods-ch00nTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				2223D5AF242E7D8200158FEB /* HomeViewModel.swift */,
+				FA43B521243BAF30007F8732 /* LoginVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		22ECB735242A855C003A9317 /* ch00n */ = {
 			isa = PBXGroup;
 			children = (
+				FA43B527243BB9C1007F8732 /* DataResources */,
 				FA3F6A75243A5D46005C3C6B /* ProjectHelpers */,
 				2223D5AE242E7D6900158FEB /* ViewModel */,
 				FA463276242BBC4800476141 /* View */,
@@ -163,6 +169,14 @@
 				FA3F6A7A243A6F12005C3C6B /* GlobalConstant.swift */,
 			);
 			path = ProjectHelpers;
+			sourceTree = "<group>";
+		};
+		FA43B527243BB9C1007F8732 /* DataResources */ = {
+			isa = PBXGroup;
+			children = (
+				FA43B525243BB939007F8732 /* AppModel.swift */,
+			);
+			path = DataResources;
 			sourceTree = "<group>";
 		};
 		FA463272242B421C00476141 /* Frameworks */ = {
@@ -370,11 +384,13 @@
 				FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */,
 				FA3F6A79243A6DA9005C3C6B /* LoginVC.swift in Sources */,
 				FA3F6A7B243A6F12005C3C6B /* GlobalConstant.swift in Sources */,
+				FA43B526243BB939007F8732 /* AppModel.swift in Sources */,
 				22ECB737242A855C003A9317 /* AppDelegate.swift in Sources */,
 				FA3F6A74243A5655005C3C6B /* RegisterVC.swift in Sources */,
 				FA463279242BBDCC00476141 /* AudioProtocol.swift in Sources */,
 				FA3F6A77243A5D5F005C3C6B /* Utilities.swift in Sources */,
 				22ECB739242A855C003A9317 /* SceneDelegate.swift in Sources */,
+				FA43B522243BAF30007F8732 /* LoginVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ target 'ch00n' do
   pod 'Firebase/Firestore'
   pod 'NVActivityIndicatorView'
   pod 'IQKeyboardManagerSwift'
+  pod 'SainiUtils'
 
   target 'ch00nTests' do
     inherit! :search_paths

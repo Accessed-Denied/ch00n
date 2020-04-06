@@ -304,6 +304,7 @@ PODS:
   - NVActivityIndicatorView/Presenter (4.8.0)
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.4)
+  - SainiUtils (0.1.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -314,6 +315,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - IQKeyboardManagerSwift
   - NVActivityIndicatorView
+  - SainiUtils
 
 SPEC REPOS:
   trunk:
@@ -345,6 +347,7 @@ SPEC REPOS:
     - NVActivityIndicatorView
     - PromisesObjC
     - Protobuf
+    - SainiUtils
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -375,7 +378,8 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  SainiUtils: 886f1659687367dfb712e8050d1001d9b0926043
 
-PODFILE CHECKSUM: 7c7dd854211a704e9c4bb7b3bbdf1e34d8b3db00
+PODFILE CHECKSUM: 8bc5ae5ece0f61e1265e323026ccf90221007c1d
 
 COCOAPODS: 1.8.4
