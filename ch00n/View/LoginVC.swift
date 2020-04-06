@@ -10,13 +10,37 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var emailTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ConfigUI()
         // Do any additional setup after loading the view.
     }
     
-
+    //MARK: - ConfigUI
+    private func ConfigUI() {
+        loginBtn.layer.cornerRadius = loginBtn.frame.height / 2
+    }
+    
+    //MARK: - loginBtnIsPressed
+    @IBAction func loginBtnIsPressed(_ sender: UIButton) {
+        let email = emailTextfield.text ?? ""
+        let password = passwordTextfield.text ?? ""
+        User.loginUser(email: email, password: password) { (Loginhandler) in
+            if Loginhandler == nil{
+                print("Logged in")
+                
+                let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+                self.navigationController?.pushViewController(vc, animated: true)
+            }else{
+                showAlertwithTitle(title: "Error", desc: Loginhandler!, vc: self)
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

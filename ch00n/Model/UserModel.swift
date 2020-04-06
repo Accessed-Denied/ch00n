@@ -248,4 +248,79 @@ class User: NSObject {
         }
     }
     //END Register User
+    
+    //==============================
+    //MARK:- loginUser
+    //==============================
+    class func loginUser(email: String, password: String, loginHandler: Loginhandler?) {
+        showLoader()
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            UserDefaults.standard.set(user?.user.uid, forKey: "currentUser")
+            if error == nil {
+                guard let status = Auth.auth().currentUser?.isEmailVerified else{
+                    return
+                }
+                if status == true{
+                    downloadUserInfo(userId: (user?.user.uid)!) { (userInfo) in
+                        AppModel.shared.loggedInUser = userInfo
+                        removeLoader()
+                        loginHandler!(nil)
+                    }
+                    
+                }else{
+                    removeLoader()
+                    loginHandler!("Email is not verified")
+                }
+                
+                
+            } else {
+                removeLoader()
+                self.handleErrors(err: error! as NSError, loginHandler: loginHandler!)
+            }
+        }
+    }
+    //END Login User
+    
+    //============================
+    //MARK:- Download User Info
+    //============================
+    
+    class func downloadUserInfo(userId: String, completion: @escaping (FirebaseUser) -> Swift.Void) {
+        // [START setup]
+        let settings = FirestoreSettings()
+        settings.areTimestampsInSnapshotsEnabled = true
+        Firestore.firestore().settings = settings
+        // [END setup]
+        db = Firestore.firestore()
+        db.collection("USERS")
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                        
+                        let data = document.data()
+                        let id = document.documentID
+                        guard let credentials = data["credentials"] as? [String: Any] else{
+                            return
+                        }
+                        
+                        if id == userId {
+                            //Converting into json format
+                            let jsonData = try? JSONSerialization.data(withJSONObject: credentials, options: [])
+                            do {
+                                //Decoding data
+                                let user = try JSONDecoder().decode(FirebaseUser.self, from: jsonData!)
+                                completion(user)
+                                
+                            }
+                            catch let err {
+                                print("Err", err)
+                            }
+                        }
+                    }
+                }
+        }
+    }//Get User Info
 }

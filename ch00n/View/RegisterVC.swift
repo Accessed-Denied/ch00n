@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import SainiUtils
 
 class RegisterVC: UIViewController {
     
     var position = ["latitude": 30,"longitude":70]
 
+    @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var registerBtn: UIButton!
     @IBOutlet weak var mobileNumberTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
@@ -27,7 +29,15 @@ class RegisterVC: UIViewController {
     
     //MARK: - ConfigUI
     private func ConfigUI() {
+        LoginViewGesture()
         registerBtn.layer.cornerRadius = registerBtn.frame.height / 2
+    }
+    
+    private func LoginViewGesture() {
+        loginView.sainiAddTapGesture {
+            let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     //MARK: - registerBtnIsPressed

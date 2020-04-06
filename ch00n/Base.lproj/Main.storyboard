@@ -340,6 +340,7 @@
                     <navigationItem key="navigationItem" id="eSG-1A-HTe"/>
                     <connections>
                         <outlet property="emailTextfield" destination="My8-0Y-wab" id="2vg-np-Ieh"/>
+                        <outlet property="loginView" destination="1ZF-D1-RpD" id="WUO-Qv-wam"/>
                         <outlet property="mobileNumberTextfield" destination="ahD-9m-IRX" id="ExM-UZ-rnq"/>
                         <outlet property="nameTextfield" destination="Zhb-Z8-jD0" id="8ez-Vk-hAv"/>
                         <outlet property="passwordTextfield" destination="3m9-zU-21h" id="RFs-TT-n8j"/>
@@ -349,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWN-o6-rHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2107.5" y="111.97183098591549"/>
+            <point key="canvasLocation" x="2006" y="112"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="A4l-Qi-t7n">
@@ -475,9 +476,6 @@
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="clickForgotBtn:" destination="U9c-uc-1F8" eventType="touchUpInside" id="bSZ-O9-nHq"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aj-WG-lAK">
                                         <rect key="frame" x="30" y="174" width="260" height="50"/>
@@ -490,7 +488,7 @@
                                             <color key="titleColor" red="0.0" green="0.44705882349999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="clickLoginBtn:" destination="U9c-uc-1F8" eventType="touchUpInside" id="q5O-ja-Zmu"/>
+                                            <action selector="loginBtnIsPressed:" destination="U9c-uc-1F8" eventType="touchUpInside" id="lYc-W0-XJ5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -551,16 +549,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="nKR-35-KwW"/>
                     <connections>
-                        <outlet property="emailTxt" destination="Z7T-0m-4Y1" id="EWt-5X-3qH"/>
-                        <outlet property="forgotBtn" destination="b4Q-Qm-2aU" id="onX-8i-he3"/>
-                        <outlet property="loginBtnLbl" destination="6aj-WG-lAK" id="qgv-fv-Efs"/>
-                        <outlet property="passwordTxt" destination="EH8-9d-LYj" id="XrL-Nl-uby"/>
-                        <outlet property="signUpLbl" destination="A76-me-5bq" id="acr-E0-116"/>
+                        <outlet property="emailTextfield" destination="Z7T-0m-4Y1" id="s54-9T-HXR"/>
+                        <outlet property="loginBtn" destination="6aj-WG-lAK" id="Oc3-gr-TU8"/>
+                        <outlet property="passwordTextfield" destination="EH8-9d-LYj" id="3Wd-x5-Hhl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjS-2X-jTh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2763.75" y="94.014084507042256"/>
+            <point key="canvasLocation" x="2979" y="112"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vXD-mx-FE4">
