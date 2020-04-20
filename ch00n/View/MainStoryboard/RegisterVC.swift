@@ -12,7 +12,7 @@ import SainiUtils
 class RegisterVC: UIViewController {
     
     var position = ["latitude": 30,"longitude":70]
-
+    
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var registerBtn: UIButton!
     @IBOutlet weak var mobileNumberTextfield: UITextField!
@@ -22,7 +22,7 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         ConfigUI()
         // Do any additional setup after loading the view.
     }
@@ -48,16 +48,14 @@ class RegisterVC: UIViewController {
                 let alert = UIAlertController(title: "Verification", message: "A verification mail has been sent to your registered mail id please verify the email.", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (result) in
                     self.navigationController?.pushViewController(Login, animated: true)
-
+                    
                 }))
-
+                
                 self.present(alert, animated: true, completion: nil)
-
+                
             }else{
                 showAlertwithTitle(title: "Error", desc: Loginhandler!, vc: self)
             }
         }
     }
-    
-
 }

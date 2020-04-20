@@ -240,11 +240,10 @@ class User: NSObject {
             }
             else{
             //    removeLoader()
-                
-                self.handleErrors(err: error! as NSError, loginHandler: loginHandler!)
-                
-            }
             
+            handleErrors(err: error! as NSError, loginHandler: loginHandler!)
+            
+        }
         }
     }
     //END Register User
@@ -324,3 +323,4 @@ class User: NSObject {
         }
     }//Get User Info
 }
+

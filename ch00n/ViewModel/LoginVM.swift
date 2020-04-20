@@ -9,5 +9,7 @@
 import UIKit
 
 protocol RegisterViewModelDelegate {
-    func DidRecieveResponse(response: String)
+    func DidRecieveResponse(response: User)
 }
+
+
