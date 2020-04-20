@@ -24,9 +24,7 @@ class CustomTabBarController: UITabBarController,CustomTabBarViewDelegate{
         
         
         setup() // Setting up the tabbar StoryBoard Controller
-        // Do any additional setup after loading the view.
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(SwitchTabEventReceived(noti:)), name: NOTIFICATIONS.SwitchTab, object: nil)
+        // Do any additional setup after loading the view.    
     }
     
     @objc func SwitchTabEventReceived(noti : Notification)
@@ -84,13 +82,13 @@ class CustomTabBarController: UITabBarController,CustomTabBarViewDelegate{
         let navController1 : UINavigationController = STORYBOARD.HOME.instantiateViewController(withIdentifier: "HomeNavigation" ) as! UINavigationController
         viewControllers.append(navController1)
         
-        let navController2 : UINavigationController = STORYBOARD.FAVOURITES.instantiateViewController(withIdentifier: "FavouritesNavigation") as! UINavigationController
+        let navController2 : UINavigationController = STORYBOARD.LIVE_STREAM.instantiateViewController(withIdentifier: "LiveNavigation") as! UINavigationController
         viewControllers.append(navController2)
         
-        let navController3 : UINavigationController = STORYBOARD.PINNED_PLACES.instantiateViewController(withIdentifier: "PinnedPlaceNavigation") as! UINavigationController
+        let navController3 : UINavigationController = STORYBOARD.NOTIFICATION.instantiateViewController(withIdentifier: "NotificationNavigation") as! UINavigationController
         viewControllers.append(navController3)
         
-        let navController4 : UINavigationController = STORYBOARD.PROFILE.instantiateViewController(withIdentifier: "ProfileNavigation") as! UINavigationController
+        let navController4 : UINavigationController = STORYBOARD.SETTING.instantiateViewController(withIdentifier: "SettingNavigation") as! UINavigationController
         viewControllers.append(navController4)
         
         

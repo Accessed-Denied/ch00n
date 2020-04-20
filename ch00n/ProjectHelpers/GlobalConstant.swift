@@ -10,4 +10,8 @@ import UIKit
 
 struct STORYBOARD {
     static var MAIN = UIStoryboard(name: "Main", bundle: nil)
+    static var HOME = UIStoryboard(name: "Home", bundle: nil)
+    static var LIVE_STREAM = UIStoryboard(name: "LiveStreaming", bundle: nil)
+    static var NOTIFICATION = UIStoryboard(name: "Notification", bundle: nil)
+    static var SETTING = UIStoryboard(name: "Setting", bundle: nil)
 }

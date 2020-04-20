@@ -27,18 +27,19 @@ class LoginVC: UIViewController {
     
     //MARK: - loginBtnIsPressed
     @IBAction func loginBtnIsPressed(_ sender: UIButton) {
-        let email = emailTextfield.text ?? ""
-        let password = passwordTextfield.text ?? ""
-        User.loginUser(email: email, password: password) { (Loginhandler) in
-            if Loginhandler == nil{
-                print("Logged in")
-                
-                let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
-                self.navigationController?.pushViewController(vc, animated: true)
-            }else{
-                showAlertwithTitle(title: "Error", desc: Loginhandler!, vc: self)
-            }
-        }
+        AppDelegate().sharedDelegate().navigateToDashboard()
+//        let email = emailTextfield.text ?? ""
+//        let password = passwordTextfield.text ?? ""
+//        User.loginUser(email: email, password: password) { (Loginhandler) in
+//            if Loginhandler == nil{
+//                print("Logged in")
+//
+//                let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+//                self.navigationController?.pushViewController(vc, animated: true)
+//            }else{
+//                showAlertwithTitle(title: "Error", desc: Loginhandler!, vc: self)
+//            }
+//        }
     }
     
     /*

@@ -29,6 +29,15 @@
 		FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420980242E765E00875B83 /* PlayMusicVC.swift */; };
 		FA420C2F244E14BA0038EC49 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA420C2E244E14BA0038EC49 /* Home.storyboard */; };
 		FA420C33244E18E00038EC49 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420C32244E18E00038EC49 /* MapVC.swift */; };
+		FA420C38244E25FA0038EC49 /* CustomTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA420C35244E25FA0038EC49 /* CustomTabBarView.xib */; };
+		FA420C39244E25FA0038EC49 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420C36244E25FA0038EC49 /* CustomTabBarView.swift */; };
+		FA420C3A244E25FA0038EC49 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420C37244E25FA0038EC49 /* CustomTabBarController.swift */; };
+		FA420C3C244E29400038EC49 /* LiveStreaming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA420C3B244E29400038EC49 /* LiveStreaming.storyboard */; };
+		FA420C3E244E29710038EC49 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA420C3D244E29710038EC49 /* Notification.storyboard */; };
+		FA420C40244E297F0038EC49 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA420C3F244E297F0038EC49 /* Setting.storyboard */; };
+		FA420C43244E29D00038EC49 /* LiveStreamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420C42244E29D00038EC49 /* LiveStreamVC.swift */; };
+		FA420C46244E29EF0038EC49 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420C45244E29EF0038EC49 /* NotificationVC.swift */; };
+		FA420C49244E2A0E0038EC49 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420C48244E2A0E0038EC49 /* SettingVC.swift */; };
 		FA43B522243BAF30007F8732 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43B521243BAF30007F8732 /* LoginVM.swift */; };
 		FA43B526243BB939007F8732 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43B525243BB939007F8732 /* AppModel.swift */; };
 		FA463274242B421C00476141 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA463273242B421C00476141 /* AVFoundation.framework */; };
@@ -74,6 +83,15 @@
 		FA420980242E765E00875B83 /* PlayMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicVC.swift; sourceTree = "<group>"; };
 		FA420C2E244E14BA0038EC49 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FA420C32244E18E00038EC49 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		FA420C35244E25FA0038EC49 /* CustomTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabBarView.xib; sourceTree = "<group>"; };
+		FA420C36244E25FA0038EC49 /* CustomTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		FA420C37244E25FA0038EC49 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		FA420C3B244E29400038EC49 /* LiveStreaming.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LiveStreaming.storyboard; sourceTree = "<group>"; };
+		FA420C3D244E29710038EC49 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		FA420C3F244E297F0038EC49 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		FA420C42244E29D00038EC49 /* LiveStreamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamVC.swift; sourceTree = "<group>"; };
+		FA420C45244E29EF0038EC49 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		FA420C48244E2A0E0038EC49 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		FA43B521243BAF30007F8732 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		FA43B525243BB939007F8732 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		FA463273242B421C00476141 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +152,7 @@
 		22ECB735242A855C003A9317 /* ch00n */ = {
 			isa = PBXGroup;
 			children = (
+				FA420C34244E25FA0038EC49 /* Custom Tab Bar */,
 				FA3DE74D243CF97000296FCA /* Services */,
 				FA43B527243BB9C1007F8732 /* DataResources */,
 				FA3F6A75243A5D46005C3C6B /* ProjectHelpers */,
@@ -142,6 +161,9 @@
 				FA463275242BBC3F00476141 /* Model */,
 				22ECB73C242A855C003A9317 /* Main.storyboard */,
 				FA420C2E244E14BA0038EC49 /* Home.storyboard */,
+				FA420C3B244E29400038EC49 /* LiveStreaming.storyboard */,
+				FA420C3D244E29710038EC49 /* Notification.storyboard */,
+				FA420C3F244E297F0038EC49 /* Setting.storyboard */,
 				22ECB736242A855C003A9317 /* AppDelegate.swift */,
 				22ECB738242A855C003A9317 /* SceneDelegate.swift */,
 				22ECB73F242A855F003A9317 /* Assets.xcassets */,
@@ -208,6 +230,40 @@
 			path = HomeStoryboard;
 			sourceTree = "<group>";
 		};
+		FA420C34244E25FA0038EC49 /* Custom Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				FA420C35244E25FA0038EC49 /* CustomTabBarView.xib */,
+				FA420C36244E25FA0038EC49 /* CustomTabBarView.swift */,
+				FA420C37244E25FA0038EC49 /* CustomTabBarController.swift */,
+			);
+			path = "Custom Tab Bar";
+			sourceTree = "<group>";
+		};
+		FA420C41244E29AC0038EC49 /* LiveStreamStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA420C42244E29D00038EC49 /* LiveStreamVC.swift */,
+			);
+			path = LiveStreamStoryboard;
+			sourceTree = "<group>";
+		};
+		FA420C44244E29D50038EC49 /* NotificationStoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FA420C45244E29EF0038EC49 /* NotificationVC.swift */,
+			);
+			path = NotificationStoryBoard;
+			sourceTree = "<group>";
+		};
+		FA420C47244E29F50038EC49 /* SettingStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA420C48244E2A0E0038EC49 /* SettingVC.swift */,
+			);
+			path = SettingStoryboard;
+			sourceTree = "<group>";
+		};
 		FA43B527243BB9C1007F8732 /* DataResources */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +295,9 @@
 		FA463276242BBC4800476141 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA420C47244E29F50038EC49 /* SettingStoryboard */,
+				FA420C44244E29D50038EC49 /* NotificationStoryBoard */,
+				FA420C41244E29AC0038EC49 /* LiveStreamStoryboard */,
 				FA420C31244E16C50038EC49 /* HomeStoryboard */,
 				FA420C30244E16B50038EC49 /* MainStoryboard */,
 			);
@@ -334,6 +393,10 @@
 				22ECB740242A855F003A9317 /* Assets.xcassets in Resources */,
 				22ECB73E242A855C003A9317 /* Main.storyboard in Resources */,
 				229F5869243262C200BAADE4 /* GoogleService-Info.plist in Resources */,
+				FA420C40244E297F0038EC49 /* Setting.storyboard in Resources */,
+				FA420C3E244E29710038EC49 /* Notification.storyboard in Resources */,
+				FA420C38244E25FA0038EC49 /* CustomTabBarView.xib in Resources */,
+				FA420C3C244E29400038EC49 /* LiveStreaming.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,13 +479,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				22ECB73B242A855C003A9317 /* HomeVC.swift in Sources */,
+				FA420C49244E2A0E0038EC49 /* SettingVC.swift in Sources */,
 				FA40613D2436538400F8A1FE /* UserModel.swift in Sources */,
 				2223D5B0242E7D8200158FEB /* HomeViewModel.swift in Sources */,
 				FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */,
+				FA420C39244E25FA0038EC49 /* CustomTabBarView.swift in Sources */,
 				FA3DE74F243CF99E00296FCA /* HttpUtility.swift in Sources */,
 				FA3F6A79243A6DA9005C3C6B /* LoginVC.swift in Sources */,
 				FA3DE751243CFACF00296FCA /* RegisterResource.swift in Sources */,
+				FA420C43244E29D00038EC49 /* LiveStreamVC.swift in Sources */,
+				FA420C3A244E25FA0038EC49 /* CustomTabBarController.swift in Sources */,
 				FA3F6A7B243A6F12005C3C6B /* GlobalConstant.swift in Sources */,
+				FA420C46244E29EF0038EC49 /* NotificationVC.swift in Sources */,
 				FA43B526243BB939007F8732 /* AppModel.swift in Sources */,
 				22ECB737242A855C003A9317 /* AppDelegate.swift in Sources */,
 				FA3F6A74243A5655005C3C6B /* RegisterVC.swift in Sources */,

@@ -14,6 +14,7 @@ import IQKeyboardManagerSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var customTabbarVc: CustomTabBarController!
     var activityLoader : NVActivityIndicatorView!
     var window: UIWindow?
 
@@ -77,6 +78,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         return UIApplication.shared.delegate as! AppDelegate
     }
+    //MARK: - storyboard
+    func storyboard() -> UIStoryboard
+    {
+        return UIStoryboard(name: "Main", bundle: nil)
+    }
 
+    //MARK: - navigateToDashboard
+    func navigateToDashboard()
+    {
+        customTabbarVc = self.storyboard().instantiateViewController(withIdentifier: "CustomTabBarController") as? CustomTabBarController
+        let navigationController = UINavigationController(rootViewController: customTabbarVc)
+        navigationController.navigationBar.isHidden = true
+        UIApplication.shared.windows.first?.rootViewController = navigationController
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+    }
 }
 

@@ -59,42 +59,11 @@ class CustomTabBarView: UIView {
       {
         let btn: UIButton? = (sender as? UIButton)
         lastIndex = (btn?.tag)!-1
-         
-        if lastIndex != 0 && AppModel.shared.token == ""{
-            UserDefaults.standard.set(lastIndex, forKey: "lastIndex")
-            GuestAlert(lastIndex: lastIndex)
-          return
-        }
-//        else if lastIndex == 1 && AppModel.shared.token != "" && AppModel.shared.loggedInUser.premiumMember == false {
-//            self.sainiShowToast(message: "You have to get premium membership.")
-//           // GetPrimeAlert(title: "Get Premium", message: "You have to get premium membership to view complete details.")
-//        }
-        else{
+
           resetAllButton()
           selectTabButton()
-        }
-      }
-
-    //MARK: - GetPrimeAlert
-    private func GetPrimeAlert(title: String, message: String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "NOT NOW", style: UIAlertAction.Style.default , handler: { (action) in
-             UIViewController.top?.dismiss(animated: true, completion: nil)
-        }))
-        alert.addAction(UIAlertAction(title: "Get", style: UIAlertAction.Style.default , handler: { (action) in
-            let vc = STORYBOARD.HOME.instantiateViewController(withIdentifier: "PremiumVC") as! PremiumVC
-            let navController = UINavigationController(rootViewController: vc)
-            navController.setNavigationBarHidden(true, animated: true)
-            
-            UIViewController.top?.navigationController?.pushViewController(navController, animated: true)
-        }))
-        alert.view.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        let navController = UINavigationController(rootViewController: alert)
-        navController.setNavigationBarHidden(true, animated: true)
-        UIViewController.top?.navigationController?.present(navController, animated: true, completion: nil)
         
-    }
-    
+      }
     
     //MARK:- Reset All Button
     func resetAllButton()
