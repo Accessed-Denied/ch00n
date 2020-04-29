@@ -25,6 +25,7 @@
 		FA3F6A77243A5D5F005C3C6B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F6A76243A5D5F005C3C6B /* Utilities.swift */; };
 		FA3F6A79243A6DA9005C3C6B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F6A78243A6DA9005C3C6B /* LoginVC.swift */; };
 		FA3F6A7B243A6F12005C3C6B /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F6A7A243A6F12005C3C6B /* GlobalConstant.swift */; };
+		FA403E182454BE1100ED5309 /* DownloadUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA403E172454BE1100ED5309 /* DownloadUsers.swift */; };
 		FA40613D2436538400F8A1FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40613C2436538400F8A1FE /* UserModel.swift */; };
 		FA420981242E765E00875B83 /* PlayMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA420980242E765E00875B83 /* PlayMusicVC.swift */; };
 		FA420C2F244E14BA0038EC49 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA420C2E244E14BA0038EC49 /* Home.storyboard */; };
@@ -79,6 +80,7 @@
 		FA3F6A76243A5D5F005C3C6B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FA3F6A78243A6DA9005C3C6B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FA3F6A7A243A6F12005C3C6B /* GlobalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
+		FA403E172454BE1100ED5309 /* DownloadUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUsers.swift; sourceTree = "<group>"; };
 		FA40613C2436538400F8A1FE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FA420980242E765E00875B83 /* PlayMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicVC.swift; sourceTree = "<group>"; };
 		FA420C2E244E14BA0038EC49 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				FA43B525243BB939007F8732 /* AppModel.swift */,
 				FA463278242BBDCC00476141 /* AudioProtocol.swift */,
 				FA40613C2436538400F8A1FE /* UserModel.swift */,
+				FA403E172454BE1100ED5309 /* DownloadUsers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				FA420C43244E29D00038EC49 /* LiveStreamVC.swift in Sources */,
 				FA420C3A244E25FA0038EC49 /* CustomTabBarController.swift in Sources */,
 				FA3F6A7B243A6F12005C3C6B /* GlobalConstant.swift in Sources */,
+				FA403E182454BE1100ED5309 /* DownloadUsers.swift in Sources */,
 				FA420C46244E29EF0038EC49 /* NotificationVC.swift in Sources */,
 				FA43B526243BB939007F8732 /* AppModel.swift in Sources */,
 				22ECB737242A855C003A9317 /* AppDelegate.swift in Sources */,
