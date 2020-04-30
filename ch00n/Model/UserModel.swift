@@ -22,15 +22,17 @@ class User: NSObject {
     let name: String
     let email: String
     let id: String
+    let phnNumber: String
     var profilePic: UIImage
     var latitude: Any
     var longitude: Any
     
     //MARK: Inits
-    init(name: String, email: String, id: String, profilePic: UIImage,latitude: Any,longitude: Any) {
+    init(name: String, email: String, id: String, phnNumber: String, profilePic: UIImage,latitude: Any,longitude: Any) {
         self.name = name
         self.email = email
         self.id = id
+        self.phnNumber = phnNumber
         self.profilePic = profilePic
         self.longitude = longitude
         self.latitude = latitude

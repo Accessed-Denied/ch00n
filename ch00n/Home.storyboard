@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coJ-vY-A9p">
-                                <rect key="frame" x="0.0" y="44" width="320" height="474"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <connections>
                                     <outlet property="delegate" destination="j8H-E5-QSt" id="Ata-k4-Qay"/>
                                 </connections>
@@ -25,7 +25,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="veQ-Ig-Cme" firstAttribute="bottom" secondItem="coJ-vY-A9p" secondAttribute="bottom" constant="50" id="K3s-6H-ZTQ"/>
+                            <constraint firstItem="veQ-Ig-Cme" firstAttribute="bottom" secondItem="coJ-vY-A9p" secondAttribute="bottom" id="K3s-6H-ZTQ"/>
                             <constraint firstItem="veQ-Ig-Cme" firstAttribute="trailing" secondItem="coJ-vY-A9p" secondAttribute="trailing" id="gXe-xe-t7n"/>
                             <constraint firstItem="coJ-vY-A9p" firstAttribute="top" secondItem="veQ-Ig-Cme" secondAttribute="top" id="mQT-ha-UW2"/>
                             <constraint firstItem="coJ-vY-A9p" firstAttribute="leading" secondItem="veQ-Ig-Cme" secondAttribute="leading" id="xwd-U8-mG1"/>

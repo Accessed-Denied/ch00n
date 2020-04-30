@@ -14,12 +14,14 @@ class MapVC: UIViewController {
     let locationManager = CLLocationManager()
     var customPinCoordinates: CLLocationCoordinate2D?
     var currentLocation: CLLocationCoordinate2D?
+    public var exposedLocation: CLLocation? {
+        return self.locationManager.location
+    }
 
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      //  mapView.delegate = self
         checkLocationServices()
         locationManager.delegate = self
 
@@ -71,6 +73,37 @@ class MapVC: UIViewController {
     }
     */
 
+//    func setCurrentLocation(){
+//      guard let exposedLocation = self.locationManager.exposedLocation else {
+//        print("*** Error in \(#function): exposedLocation is nil")
+//        return
+//      }
+//      mapView.showsUserLocation = false
+//      if currentLocation == nil {
+//        zoomToLatestLocation(with: exposedLocation.coordinate)
+//      }
+//      currentLocation = exposedLocation.coordinate
+//      searchLocation = exposedLocation.coordinate
+////      DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){[weak self] in
+////        self?.API_OfCQCListing(params: [“radius”: 1000, “coordinates”: [exposedLocation.coordinate.latitude, exposedLocation.coordinate.longitude], “limit”: 30, “rating”: []])
+////      }
+//      //location title
+//      self.locationManager.getPlace(for: exposedLocation) { placemark in
+//        guard let placemark = placemark else { return }
+//        var output = ""
+//        if let country = placemark.country {
+//          output = country
+//        }
+//        if let state = placemark.administrativeArea {
+//          output = state
+//        }
+//        if let town = placemark.locality {
+//          output = town
+//        }
+//        self.addressLocation = " " + output
+//        self.userLocationBtn.setTitle(" " + output, for: UIControl.State.normal)
+//      }
+//    }
 }
 
 //MARK: - CLLocationManagerDelegate
