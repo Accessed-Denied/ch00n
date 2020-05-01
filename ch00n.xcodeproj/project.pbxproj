@@ -98,6 +98,7 @@
 		FA43B525243BB939007F8732 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		FA463273242B421C00476141 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FA463278242BBDCC00476141 /* AudioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProtocol.swift; sourceTree = "<group>"; };
+		FAC467C3245CB02D00DB9435 /* ch00n.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ch00n.entitlements; sourceTree = "<group>"; };
 		FE62E77AA227BF902F741B95 /* Pods-ch00nTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ch00nTests.release.xcconfig"; path = "Target Support Files/Pods-ch00nTests/Pods-ch00nTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +155,7 @@
 		22ECB735242A855C003A9317 /* ch00n */ = {
 			isa = PBXGroup;
 			children = (
+				FAC467C3245CB02D00DB9435 /* ch00n.entitlements */,
 				FA420C34244E25FA0038EC49 /* Custom Tab Bar */,
 				FA3DE74D243CF97000296FCA /* Services */,
 				FA43B527243BB9C1007F8732 /* DataResources */,
@@ -664,6 +666,7 @@
 			baseConfigurationReference = D3FB7F5CC569F2C726D34514 /* Pods-ch00n.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ch00n/ch00n.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = ch00n/Info.plist;
@@ -684,6 +687,7 @@
 			baseConfigurationReference = 7A94A06AD1EE52FD992938FD /* Pods-ch00n.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ch00n/ch00n.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = ch00n/Info.plist;

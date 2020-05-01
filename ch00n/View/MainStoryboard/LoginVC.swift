@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import CoreLocation
 
 class LoginVC: UIViewController {
-
+    
+    var locationManager = CLLocationManager()
+    
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var emailTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         ConfigUI()
         // Do any additional setup after loading the view.
     }
@@ -23,33 +26,40 @@ class LoginVC: UIViewController {
     //MARK: - ConfigUI
     private func ConfigUI() {
         loginBtn.layer.cornerRadius = loginBtn.frame.height / 2
+        
+//        locationManager.requestWhenInUseAuthorization()
+//        var currentLoc: CLLocation!
+//        if(CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
+//        CLLocationManager.authorizationStatus() == .authorizedAlways) {
+//           currentLoc = locationManager.location
+////            print(currentLoc.coordinate.latitude)
+////           print(currentLoc.coordinate.longitude)
+//        }
     }
     
     //MARK: - loginBtnIsPressed
     @IBAction func loginBtnIsPressed(_ sender: UIButton) {
-        AppDelegate().sharedDelegate().navigateToDashboard()
-//        let email = emailTextfield.text ?? ""
-//        let password = passwordTextfield.text ?? ""
-//        User.loginUser(email: email, password: password) { (Loginhandler) in
-//            if Loginhandler == nil{
-//                print("Logged in")
-//
-//                let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
-//                self.navigationController?.pushViewController(vc, animated: true)
-//            }else{
-//                showAlertwithTitle(title: "Error", desc: Loginhandler!, vc: self)
-//            }
-//        }
+        
+        let email = emailTextfield.text ?? ""
+        let password = passwordTextfield.text ?? ""
+        User.loginUser(email: email, password: password) { (Loginhandler) in
+            if Loginhandler == nil{
+                print("Logged in")
+                AppDelegate().sharedDelegate().navigateToDashboard()
+            }else{
+                showAlertwithTitle(title: "Error", desc: Loginhandler!, vc: self)
+            }
+        }
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
