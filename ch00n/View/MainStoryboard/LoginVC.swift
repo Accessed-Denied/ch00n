@@ -26,15 +26,6 @@ class LoginVC: UIViewController {
     //MARK: - ConfigUI
     private func ConfigUI() {
         loginBtn.layer.cornerRadius = loginBtn.frame.height / 2
-        
-//        locationManager.requestWhenInUseAuthorization()
-//        var currentLoc: CLLocation!
-//        if(CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
-//        CLLocationManager.authorizationStatus() == .authorizedAlways) {
-//           currentLoc = locationManager.location
-////            print(currentLoc.coordinate.latitude)
-////           print(currentLoc.coordinate.longitude)
-//        }
     }
     
     //MARK: - loginBtnIsPressed

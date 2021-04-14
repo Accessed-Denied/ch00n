@@ -52,8 +52,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         removeLoader()
         window?.isUserInteractionEnabled = false
-        activityLoader = NVActivityIndicatorView(frame: CGRect(x: ((window?.frame.size.width)!-100)/2, y: ((window?.frame.size.height)!-100)/2, width: 100, height: 100))
-        activityLoader.type = .ballClipRotatePulse
+        //activityLoader = NVActivityIndicatorView(frame: CGRect(x: ((window?.frame.size.width)!-100)/2, y: ((window?.frame.size.height)!-100)/2, width: 100, height: 100))
+       / activityLoader.type = .ballClipRotatePulse
         activityLoader.color = UIColor.white
         window?.addSubview(activityLoader)
         activityLoader.startAnimating()
